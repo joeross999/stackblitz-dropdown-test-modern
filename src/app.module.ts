@@ -1,10 +1,13 @@
 import { NgModule } from "@angular/core";
 import { AppComponent } from "./app/app.component";
 import { RecursiveDropdownsComponent } from "./recursive-dropdowns/recursive-dropdowns.component";
-import { DropDownListModule } from "@progress/kendo-angular-dropdowns";
+import {
+    ComboBoxModule,
+    DropDownListModule,
+} from "@progress/kendo-angular-dropdowns";
 import { DataWithValuePipe } from "./data-with-value.pipe";
 import { BrowserModule } from "@angular/platform-browser";
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 @NgModule({
     declarations: [
@@ -12,7 +15,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
         RecursiveDropdownsComponent,
         DataWithValuePipe,
     ],
-    imports: [DropDownListModule, BrowserModule, BrowserAnimationsModule],
+    imports: [
+        DropDownListModule,
+        BrowserModule,
+        BrowserAnimationsModule,
+        ComboBoxModule,
+    ],
     bootstrap: [AppComponent],
     providers: [],
 })
