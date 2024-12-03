@@ -1,0 +1,5 @@
+<ng-container *ngFor="let selectedElement of selectedElements; index as i">
+  <kendo-dropdownlist [data]="dataClassList | dataWithValue" textField="value" valueField="data"
+    [value]="selectedElement" (valueChange)="selectionStringChanged($event, i)">
+  </kendo-dropdownlist>
+</ng-container>
