@@ -3,3 +3,7 @@
     [value]="selectedElement" (valueChange)="selectionStringChanged($event, i)">
   </kendo-dropdownlist>
 </ng-container>
+
+<div *ngFor="let selectedElement of selectedElements">
+  {{selectedElement | json}}
+</div>

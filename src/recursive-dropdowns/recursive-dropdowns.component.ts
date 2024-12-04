@@ -15,6 +15,7 @@ import { Container } from "../classes/container";
     selector: "app-recursive-dropdowns",
     templateUrl: "./recursive-dropdowns.component.html",
     styleUrls: ["./recursive-dropdowns.component.css"],
+    standalone: false
 })
 export class RecursiveDropdownsComponent implements OnInit, OnChanges {
     @Input() container!: Container;
@@ -36,6 +37,6 @@ export class RecursiveDropdownsComponent implements OnInit, OnChanges {
 
     selectionStringChanged(data: any, position: number): void {
         console.log("selectionStringChanged", data);
-        this.selectedElements[position] = data;
+        this.selectedElements[position] = data.data;
     }
 }

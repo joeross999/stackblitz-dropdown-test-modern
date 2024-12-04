@@ -12,6 +12,7 @@ import { DataClass } from "../classes/data";
         >
         </app-recursive-dropdowns>
     `,
+    standalone: false
 })
 export class AppComponent {
     container = new Container(DataClass.MAP, [

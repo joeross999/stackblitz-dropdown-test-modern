@@ -3,6 +3,7 @@ import { DataClass } from "./classes/data";
 
 @Pipe({
     name: "dataWithValue",
+    standalone: false
 })
 export class DataWithValuePipe implements PipeTransform {
     transform(
