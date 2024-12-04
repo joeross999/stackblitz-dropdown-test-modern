@@ -14,7 +14,7 @@
     "@angular/forms": "^17.3.12",
     "@angular/platform-browser": "^17.3.12",
     "@angular/router": "^17.3.12",
-    "@progress/kendo-angular-dropdowns": "13.1.0",
+    "@progress/kendo-angular-dropdowns": "^14.0.0",
     "@angular/platform-browser-dynamic": "^17.3.12",
     "@progress/kendo-theme-default": "^6.6.0",
     "rxjs": "^7.8.1",
@@ -22,10 +22,10 @@
     "zone.js": "~0.14.10"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^16.1.4",
+    "@angular-devkit/build-angular": "^17.3.11",
     "@angular/localize": "^17.3.12",
-    "@angular-eslint/builder": "^16.1.0",
-    "@angular/cli": "^16.1.4",
-    "typescript": "^5.1.0"
+    "@angular-eslint/builder": "^17.5.3",
+    "@angular/cli": "^17.3.11",
+    "typescript": "^5.4.5"
   }
 }
